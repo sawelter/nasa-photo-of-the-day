@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
-import "./App.css";
+import "../styling/App.css";
 import axios from "axios";
 import styled from 'styled-components'
 
-import NasaPhoto from "./components/NasaPhoto.js"
-import Header from "./components/Header.js"
+import NasaPhoto from "./NasaPhoto.js"
+import Header from "./Header.js"
 
 
 const API_KEY = "1TfVcwMbYqKXt3EPA3E5bsBepCmNc9Xe40T4k0oL";
