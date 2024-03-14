@@ -1,0 +1,71 @@
+.nasa-photo-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 50px 10px;
+    padding: 20px;
+}
+
+img {
+    height: 70vh;
+    margin: 0 15px;
+}
+
+.text-wrapper {
+    background-color: lightgray;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 70vh;
+}
+
+h1 {
+    font-size: 2rem;
+    padding: 10px;
+    margin: 10px;
+}
+
+p {
+    line-height: 1.3;
+    padding: 10px;
+    text-align: left;
+    margin: 20px;
+
+
+    overflow-y: scroll;
+
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: lightgray;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: darkgray;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: black;
+    }
+}
+
+@media(max-width: 850px) {
+    flex-direction: column;
+    margin-top: 20px;
+
+    .text-wrapper {
+        height: auto;
+        max-width: 100%;
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    img {
+        max-width: 100%;
+        width: 100%;
+        margin: 0;
+    }
+}
